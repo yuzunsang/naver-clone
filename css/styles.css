@@ -1,0 +1,30 @@
+header {
+  height: 200px;
+}
+main {
+  background: #fdfdfe;
+}
+footer {
+  background: #f5f6f7;
+  height: 310px;
+}
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.alarm-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
