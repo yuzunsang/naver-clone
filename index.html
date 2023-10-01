@@ -3,45 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/jYtnK__ibJh9emODIgTyjZdbKym1iAj4RfoVhQZcfbG-DuTSHR5moHVx9CQnqg1yoco9">
+    <link rel="SHORTCUT ICON" href="https://play-lh.googleusercontent.com/jYtnK__ibJh9emODIgTyjZdbKym1iAj4RfoVhQZcfbG-DuTSHR5moHVx9CQnqg1yoco9">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>NAVER</title>
 </head>
 <body>
-    <header>
-        <div class="alarm-bar">
-            <div class="alarm-bar__column">
+    <header id="header">
+        <!-- 메뉴 네이버페이 왼쪽, 채팅 알림 오른쪽 -->
+        <div class="shortcut">
+            <div class="shortcut__column">
                 <i class="fas fa-bars fa-2x"></i>
                 <i class="fas fa-receipt fa-2x"></i>
             </div>
-            <div class="alarm-bar__column">
+            <div class="shortcut__column">
                 <i class="far fa-comment-dots fa-2x"></i>
                 <i class="far fa-bell fa-2x"></i>
             </div>
         </div>
 
-        <form class="search-form">
-            <label for="search">
-                <img src="https://play-lh.googleusercontent.com/jYtnK__ibJh9emODIgTyjZdbKym1iAj4RfoVhQZcfbG-DuTSHR5moHVx9CQnqg1yoco9" />
-            </label>
-            <input id="search" type="text" placeholder="검색어를 입력해 주세요."/>
-            <input type="submit" value="검색" />
-        </form>
+        <div class="search-box">
+            <div class="search-box__container">
+                <img class="search-box__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Naver_logo_initial.svg/1200px-Naver_logo_initial.svg.png" />
+                <i class="fas fa-keyboard fa-lg search-box__keyboard"></i>
+                <i class="fas fa-sort-down fa-lg search-box__toggle"></i>
+                <i class="fas fa-search fa-lg search-box__search"></i>
+            </div>
+        </div>
+        <!-- 아이콘이 작으므로 padding을 늘려서 border 처리하기 -->
+        <div class="menu">
+            <ul class="menu-list">
+                <li><i class="fas fa-envelope-open-text fa-2x"></i>메일</li>
+                <li><i class="fas fa-coffee fa-2x"></i>카페</li>
+                <li><i class="fab fa-blogger fa-2x"></i>블로그</li>
+                <li><i class="fas fa-shopping-bag fa-2x"></i>쇼핑</li>
+                <li><i class="far fa-newspaper fa-2x"></i>뉴스</li>
+                <li><i class="fas fa-chart-line fa-2x" ></i>증권</li>
+                <li><i class="fas fa-home fa-2x"></i>부동산</li>
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>지도</li>
+                <li><i class="fas fa-book-open fa-2x"></i>웹툰</li>
+                <li><i class="fas fa-ellipsis-h fa-2x"></i></li>
+            </ul>
+        </div>
 
-        <ul class="categories">
-            <li><a href="#"><i class="fas fa-envelope-open-text fa-2x"></i>메일</a></li>
-            <li><a href="#"></a><i class="fas fa-coffee fa-2x"></i>카페</li>
-            <li><a href="#"></a><i class="fab fa-blogger fa-2x"></i>블로그</li>
-            <li><a href="#"></a><i class="fas fa-shopping-bag fa-2x"></i>쇼핑</li>
-            <li><a href="#"></a><i class="far fa-newspaper fa-2x"></i>뉴스</li>
-            <li><a href="#"></a><i class="fas fa-chart-line fa-2x" ></i>증권</li>
-            <li><a href="#"></a><i class="fas fa-home fa-2x"></i>부동산</li>
-            <li><a href="#"></a><i class="fas fa-map-marker-alt fa-2x"></i>지도</li>
-            <li><a href="#"></a><i class="fas fa-book-open fa-2x"></i>웹툰</li>
-            <li><a href="#"></a><i class="fas fa-ellipsis-h fa-2x"></i></li>
-        </ul>
     </header>
 
     <main>MAIN</main>
