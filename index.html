@@ -11,7 +11,6 @@
 </head>
 <body>
     <header id="header">
-        <!-- 메뉴 네이버페이 왼쪽, 채팅 알림 오른쪽 -->
         <div class="shortcut">
             <div class="shortcut__column">
                 <i class="fas fa-bars fa-2x"></i>
@@ -23,35 +22,118 @@
             </div>
         </div>
 
-        <div class="search-box">
+        <form class="search-box">
             <div class="search-box__container">
                 <img class="search-box__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Naver_logo_initial.svg/1200px-Naver_logo_initial.svg.png" />
                 <i class="fas fa-keyboard fa-lg search-box__keyboard"></i>
+                <input class="search-box__input" type="text" placeholder="검색어를 입력해주세요." />
                 <i class="fas fa-sort-down fa-lg search-box__toggle"></i>
                 <i class="fas fa-search fa-lg search-box__search"></i>
             </div>
-        </div>
-        <!-- 아이콘이 작으므로 padding을 늘려서 border 처리하기 -->
-        <div class="menu">
-            <ul class="menu-list">
-                <li><i class="fas fa-envelope-open-text fa-2x"></i>메일</li>
-                <li><i class="fas fa-coffee fa-2x"></i>카페</li>
-                <li><i class="fab fa-blogger fa-2x"></i>블로그</li>
-                <li><i class="fas fa-shopping-bag fa-2x"></i>쇼핑</li>
-                <li><i class="far fa-newspaper fa-2x"></i>뉴스</li>
-                <li><i class="fas fa-chart-line fa-2x" ></i>증권</li>
-                <li><i class="fas fa-home fa-2x"></i>부동산</li>
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>지도</li>
-                <li><i class="fas fa-book-open fa-2x"></i>웹툰</li>
-                <li><i class="fas fa-ellipsis-h fa-2x"></i></li>
-            </ul>
-        </div>
+        </form>
 
+        <div class="menu">
+            <div class="menu__list">
+                <i class="fas fa-envelope-open-text fa-2x"></i>
+                <span>메일</span>
+            </div>
+            <div class="menu__list">
+                <i class="fas fa-coffee fa-2x"></i>
+                <span>카페</span>
+            </div>
+            <div class="menu__list">
+                <i class="fab fa-blogger fa-2x"></i>
+                <span>블로그</span>
+            </div>
+            <div class="menu__list">
+                <i class="fas fa-shopping-bag fa-2x"></i>
+                <span>쇼핑</span>
+            </div>
+            <div class="menu__list">
+                <i class="far fa-newspaper fa-2x"></i>
+                <span>뉴스</span>
+            </div>
+            <div class="menu__list">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <span>증권</span>
+            </div>
+            <div class="menu__list">
+                <i class="fas fa-home fa-2x"></i>
+                <span>부동산</span>
+            </div>
+            <div class="menu__list">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <span>지도</span>
+            </div>
+            <div class="menu__list">
+                <i class="fas fa-book-open fa-2x"></i>
+                <span>웹툰</span>
+            </div>
+            <div class="menu__list">
+                <i class="fas fa-ellipsis-h fa-2x"></i>
+            </div>
+        </div>
     </header>
 
     <main>MAIN</main>
 
-    <footer>FOOTER</footer>
+    <footer id="footer">
+        <div class="issue-component">
+            <img src="" />
+            <div>
+                <span>네이버 열린연단</span>
+                <span class="font-bold">민주주의의 위기와 조건</span>
+                <span>자질 기풍제도 이후를 생각하며</span>
+            </div>
+        </div>
+
+        <div class="credit-header">
+            <div class="credit__notice">
+                <span class="font-bold">공지사항</span>
+            </div>
+            <div class="credit__services">
+                <span class="font-bold">서비스 전체보기</span>
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="credit-main">
+            <div class="credit-component">
+                <span class="font-bold">Creators</span>
+                <span>크리에이터</span>
+                <span>스몰비즈니스</span>
+            </div>
+            <div class="credit-component">
+                <span class="font-bold">Partners</span>
+                <span>SME 풀케어 시스템</span>
+                <span>비즈니스 광고</span>
+                <span>스토어 개설</span>
+                <span>지역업체 등록</span>
+                <span>엑스퍼트 등록</span>
+            </div>
+            <div class="credit-component">
+                <span class="font-bold">Developers</span>
+                <span>네이버 개발자 센터</span>
+                <span>오픈 API</span>
+                <span>오픈소스</span>
+                <span>네이버 D2</span>
+                <span>네이버 D2SF</span>
+                <span>네이버 랩스</span>
+            </div>
+        </div>
+        
+        <div class="credit-footer">
+            <span>회사소개</span>
+            <span>인재채용</span>
+            <span>제휴제안</span>
+            <span>이용약관</span>
+            <span class="font-bold">개인정보처리방침</span>
+            <span>청소년보호정책</span>
+            <span>네이버 정책</span>
+            <span>고객센터</span>
+            <span class="font-bold">Naver Corp.</span>
+        </div>
+    </footer>
 
     <script
     src="https://kit.fontawesome.com/6478f529f2.js"
