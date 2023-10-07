@@ -7,12 +7,14 @@ header {
   padding: 25px 325px 0 310px;
 }
 main {
-  background: #fdfdfe;
+  /* background: #fdfdfe; */
+  background: rgba(0,0,0,0.3);
+  height: 2100px;
   padding: 0 325px 0 310px;
 }
 footer {
   background: #f5f6f7;
-  height: 310px;
+  height: 460px;
   padding: 0 325px 80px 310px;
 }
 img {
@@ -112,6 +114,25 @@ li {
     flex-direction: column;
     align-items: center;
 }
+
+/* global CSS */
+.global-component {
+  display: flex;
+}
+.global-component__column > h5 {
+  font-size: 14px;
+}
+
+.credit-ad {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+.credit-ad__thumbnail {
+  width: 160px;
+  height: 100px;
+  border-radius: 10px;
+}
 .credit-header {
   display: flex;
   justify-content: space-between;
@@ -125,35 +146,45 @@ li {
 .credit-header__column > span {
   font-size: 13px;
 }
+
 .credit-main {
   border-bottom: 1px solid rgba(0,0,0, 0.1);
   height: 120px;
-  padding: 30px 0;
   font-size: 13px;
   display: flex;
+  justify-content: space-between;
 }
-.credit-main__target {
+.credit-main__column {
+  margin: 12.5px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
-.credit-main__target > span {
-  margin: 5px 50px 5px 0;
+.credit-main__column:first-child {
+  width: 110px;
 }
-.credit-main__contents__row {
+.credit-main__column > img {
+  width: 50px;
+  height: 50px;
+}
+.credit-main__row {
   display: flex;
 }
-.credit-main__contents__row > span {
-  margin: 5px 15px 5px 15px;
-}
+
 .credit-footer {
   display: flex;
   justify-content: center;
   font-size: 13px;
 }
 .credit-footer > span {
-  margin: 30px 15px;
+  margin: 30px 0;
 }
 .font-bold {
   font-weight: 600;
+}
+.divider {
+  border-right: 1px solid rgba(0,0,0, 0.1);
+  padding: 0 8px;
+}
+.divider__end {
+  padding-left: 8px;
 }
