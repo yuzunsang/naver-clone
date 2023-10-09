@@ -118,9 +118,21 @@ li {
 /* global CSS */
 .global-component {
   display: flex;
+  align-items: flex-start;
 }
-.global-component__column > h5 {
+.global-component__column > div, h5 {
+  padding: 5px 0;
   font-size: 14px;
+}
+.global-component__column > a {
+  font-size: 13px;
+}
+.global-component__highlight {
+  background-color: #9fadb2;
+  color: white;
+  width: fit-content;
+  height: 20px;
+  border-radius: 3px;
 }
 
 .credit-ad {
@@ -132,6 +144,7 @@ li {
   width: 160px;
   height: 100px;
   border-radius: 10px;
+  margin-right: 20px;
 }
 .credit-header {
   display: flex;
