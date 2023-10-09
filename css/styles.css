@@ -1,3 +1,6 @@
+@import "reset.css";
+@import "variables.css";
+
 * {
   box-sizing: border-box;
 }
@@ -99,7 +102,7 @@ img {
   font-size: 30px;
   padding: 5px;
   margin: 5px;
-  border: 1px solid rgba(0,0,0, 0.1);
+  border: var(--main-border);
   border-radius: 10px;
   transition: box-shadow 0s ease-in-out;
 }
@@ -118,27 +121,29 @@ li {
 /* global CSS */
 .global-component {
   display: flex;
-  align-items: flex-start;
-}
-.global-component__column > div, h5 {
-  padding: 5px 0;
-  font-size: 14px;
-}
-.global-component__column > a {
   font-size: 13px;
 }
-.global-component__highlight {
+.global-component__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.global-component__title--highlight {
   background-color: #9fadb2;
   color: white;
   width: fit-content;
-  height: 20px;
+  height: fit-content;
+  padding: 3px;
   border-radius: 3px;
+}
+.global-component__text {
+  opacity: 0.8;
 }
 
 .credit-ad {
   display: flex;
   padding: 30px 0;
-  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  border-bottom: var(--main-border);
 }
 .credit-ad__thumbnail {
   width: 160px;
@@ -150,7 +155,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  border-bottom: var(--main-border);
   height: 60px;
 }
 .credit-header__column {
@@ -161,26 +166,30 @@ li {
 }
 
 .credit-main {
-  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  border-bottom: var(--main-border);
   height: 120px;
   font-size: 13px;
   display: flex;
   justify-content: space-between;
-}
-.credit-main__column {
-  margin: 12.5px;
-  display: flex;
   align-items: center;
+}
+.credit-main__row {
+  display: flex;
+  padding: 10px 0;
 }
 .credit-main__column:first-child {
   width: 110px;
 }
-.credit-main__column > img {
-  width: 50px;
+#whale-browser-img {
   height: 50px;
+  width: 50px;
+  margin-left: 35px;
+  margin-right: 55px;
 }
-.credit-main__row {
-  display: flex;
+#project-flower-img {
+  height: 50px;
+  width: 50px;
+  margin-left: 35px;
 }
 
 .credit-footer {
@@ -191,11 +200,12 @@ li {
 .credit-footer > span {
   margin: 30px 0;
 }
+
 .font-bold {
   font-weight: 600;
 }
 .divider {
-  border-right: 1px solid rgba(0,0,0, 0.1);
+  border-right: var(--main-border);
   padding: 0 8px;
 }
 .divider__end {
