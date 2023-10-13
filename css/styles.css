@@ -11,7 +11,6 @@ header {
   display: flex;
   align-items: center;
   position: relative;
-  /* padding: 25px 325px 0 310px; */
 }
 main {
   background: #fdfdfe;
@@ -43,9 +42,6 @@ img {
 }
 
 .search-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 8px;
 }
 .search-box__container {
@@ -55,7 +51,6 @@ img {
   border: 1.5px solid rgb(3, 199, 91);
   border-radius: 40px;
   position: relative;
-  transition: box-shadow 0s ease-in-out;
 }
 .search-box__container:hover {
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -97,6 +92,11 @@ img {
 }
 
 .menu {
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+
   display: flex;
   justify-content: center;
 }
@@ -112,7 +112,6 @@ img {
   margin: 5px;
   border: var(--main-border);
   border-radius: 10px;
-  transition: box-shadow 0s ease-in-out;
 }
 .menu__list > i:hover {
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
