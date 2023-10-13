@@ -1,0 +1,70 @@
+footer {
+  height: 460px;
+  width: 100%;
+  background-color: #f5f6f7;
+}
+#footer {
+  height: 100%;
+  width: 1080px;
+  margin: auto;
+}
+.credit-ad {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: var(--main-border);
+}
+.credit-ad__thumbnail {
+  width: 160px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.credit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--main-border);
+  height: 60px;
+}
+.credit-header__column {
+  margin: 0 5px;
+}
+.credit-header__column > span {
+  font-size: 13px;
+}
+
+.credit-main {
+  border-bottom: var(--main-border);
+  height: 120px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.credit-main__row {
+  display: flex;
+  padding: 10px 0;
+}
+.credit-main__column:first-child {
+  width: 110px;
+}
+#whale-browser-img {
+  height: 50px;
+  width: 50px;
+  margin-left: 35px;
+  margin-right: 55px;
+}
+#project-flower-img {
+  height: 50px;
+  width: 50px;
+  margin-left: 35px;
+}
+
+.credit-footer {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+.credit-footer > span {
+  margin: 30px 0;
+}

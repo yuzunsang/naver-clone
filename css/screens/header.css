@@ -1,0 +1,123 @@
+header {
+  margin: auto;
+  height: 260px;
+  width: 1280px;
+  position: relative;
+}
+
+.shortcut {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+.shortcut__column > i:last-child {
+  margin-left: 25px;
+
+  position: relative;
+}
+#alarm {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.search-box {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+}
+.search-box__container {
+  width: 710px;
+  height: 60px;
+  border: 1.5px solid var(--naver-main-color);
+  border-radius: 40px;
+
+  position: relative;
+}
+.search-box__container:hover {
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.search-box__logo {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+.search-box__keyboard {
+  position: absolute;
+  left: 595px;
+  top: 20px;
+  opacity: 0.2;
+}
+.search-box__toggle {
+  position: absolute;
+  left: 630px;
+  top: 15px;
+  color: var(--naver-main-color-light);
+}
+.search-box__search {
+  position: absolute;
+  left: 660px;
+  top: 20px;
+  color: var(--naver-main-color-light);
+}
+.search-box__input {
+  position: absolute;
+  left: 70px;
+  top: 18px;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.search-box__input::placeholder {
+  font-weight: 400;
+  opacity: 0.2;
+}
+
+.menu {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 8px;
+}
+.menu__list > i {
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+  border: var(--main-border);
+  color: var(--naver-main-color);
+  border-radius: 10px;
+}
+.menu__list > i:hover {
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.menu__list > span {
+  font-size: 13px;
+}
