@@ -1,0 +1,21 @@
+main {
+  background: #fdfdfe;
+  min-height: 500px;
+}
+#main {
+  width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 830px 420px;
+  grid-template-rows: 120px 310px 890px 130px;
+  gap: 15px 30px;
+}
+
+.temp-box {
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e8e9ec;
+  font-size: 40px;
+  text-align: center;
+}

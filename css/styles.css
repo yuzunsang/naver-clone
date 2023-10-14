@@ -4,35 +4,15 @@
 /* screens */
 @import "screens/header.css";
 @import "screens/footer.css";
+@import "screens/main.css";
 
 * {
   box-sizing: border-box;
 }
 
-main {
-  background: #fdfdfe;
-  min-height: 500px;
-  padding: 0 325px 0 310px;
-}
 img {
   width: 20px;
   height: 20px;
-}
-
-.main-container {
-  margin: auto;
-  display: grid;
-  grid-template-columns: 833px 423px;
-  column-gap: 30px;
-}
-
-.temp-box {
-  background-color: yellow;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #e8e9ec;
-  font-size: 40px;
-  text-align: center;
 }
 
 /* global CSS */
