@@ -1,0 +1,10 @@
+.font-bold {
+  font-weight: bold;
+}
+.divider {
+  border-right: var(--main-border);
+  padding: 0 8px;
+}
+.divider__end {
+  padding-left: 8px;
+}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
 @import "reset.css";
 @import "variables.css";
 
@@ -6,45 +8,17 @@
 @import "screens/footer.css";
 @import "screens/main.css";
 
+/* components */
+@import "components/alt-global.css";
+@import "components/global.css";
+@import "components/reuse.css";
+
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 img {
   width: 20px;
   height: 20px;
-}
-
-/* global CSS */
-.global-component {
-  display: flex;
-  font-size: 13px;
-}
-.global-component__column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.global-component__title--highlight {
-  background-color: #9fadb2;
-  color: white;
-  width: fit-content;
-  height: fit-content;
-  padding: 3px;
-  border-radius: 3px;
-}
-.global-component__text {
-  opacity: 0.8;
-}
-
-/* 재사용 클래스 */
-.font-bold {
-  font-weight: bold;
-}
-.divider {
-  border-right: var(--main-border);
-  padding: 0 8px;
-}
-.divider__end {
-  padding-left: 8px;
 }
