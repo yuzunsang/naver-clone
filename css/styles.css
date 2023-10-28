@@ -18,7 +18,33 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+/* 필요한 css인 지 검토 예정 */
 img {
   width: 20px;
   height: 20px;
+}
+
+/* 콘텐츠는 숨기면서 스크린 리더는 정상적으로 웹을 읽을 수 있도록 blind 속성 적용 */
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
+
+/* 가상요소 이미지 테두리 설정 */
+.thumb-bd {
+  display: block;
+  position: relative;
+}
+.thumb-bd::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #000;
+  opacity: 0.1;
 }
