@@ -2,11 +2,6 @@
   display: flex;
   font-size: 13px;
 }
-/* test */
-.alt-global-component {
-  font-size: 13px;
-}
-/* .alt-global- */
 
 .global-component__column {
   display: flex;
