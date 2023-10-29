@@ -20,75 +20,89 @@
     <header>
       <div class="shortcut">
         <div class="shortcut__column">
-          <i class="fas fa-bars fa-2x" title="바로가기"></i>
-          <i class="fas fa-receipt fa-2x" title="네이버페이"></i>
+          <a href="/"><i class="fas fa-bars fa-2x" title="바로가기"></i></a>
+          <a href="/"
+            ><i class="fas fa-receipt fa-2x" title="네이버페이"></i
+          ></a>
         </div>
         <div class="shortcut__column">
-          <i class="far fa-comment-dots fa-2x" title="네이버톡"></i>
-          <i class="far fa-bell fa-2x" title="알림/혜택">
-            <div id="alarm">9</div>
-          </i>
+          <a href="/"
+            ><i class="far fa-comment-dots fa-2x" title="네이버톡"></i
+          ></a>
+          <a href="/"><i class="far fa-bell fa-2x" title="알림/혜택"></i></a>
         </div>
+        <div id="alarm">9</div>
       </div>
 
       <form class="search-box">
-        <div class="search-box__container">
-          <img
-            class="search-box__logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Naver_logo_initial.svg/1200px-Naver_logo_initial.svg.png"
-          />
-          <i class="fas fa-keyboard fa-lg search-box__keyboard"></i>
-          <input
-            class="search-box__input"
-            type="text"
-            placeholder="검색어를 입력해주세요."
-          />
-          <i class="fas fa-sort-down fa-lg search-box__toggle"></i>
-          <i class="fas fa-search fa-lg search-box__search"></i>
-        </div>
+        <fieldset>
+          <legend class="blind">검색</legend>
+          <div class="search-box__container">
+            <img
+              class="search-box__logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Naver_logo_initial.svg/1200px-Naver_logo_initial.svg.png"
+            />
+            <input
+              class="search-box__input"
+              type="text"
+              placeholder="검색어를 입력해주세요."
+            />
+            <i class="fas fa-keyboard fa-lg search-box__keyboard"></i>
+            <i class="fas fa-sort-down fa-lg search-box__toggle"></i>
+            <span class="blind">검색</span>
+            <button type="submit" class="search-box__button">
+              <i class="fas fa-search fa-lg"></i>
+            </button>
+          </div>
+        </fieldset>
       </form>
 
-      <div class="menu">
-        <div class="menu__list">
-          <i class="fas fa-envelope-open-text fa-2x"></i>
-          <span>메일</span>
-        </div>
-        <div class="menu__list">
-          <i class="fas fa-coffee fa-2x"></i>
-          <span>카페</span>
-        </div>
-        <div class="menu__list">
-          <i class="fab fa-blogger fa-2x"></i>
-          <span>블로그</span>
-        </div>
-        <div class="menu__list">
-          <i class="fas fa-shopping-bag fa-2x"></i>
-          <span>쇼핑</span>
-        </div>
-        <div class="menu__list">
-          <i class="far fa-newspaper fa-2x"></i>
-          <span>뉴스</span>
-        </div>
-        <div class="menu__list">
-          <i class="fas fa-chart-line fa-2x"></i>
-          <span>증권</span>
-        </div>
-        <div class="menu__list">
-          <i class="fas fa-home fa-2x"></i>
-          <span>부동산</span>
-        </div>
-        <div class="menu__list">
-          <i class="fas fa-map-marker-alt fa-2x"></i>
-          <span>지도</span>
-        </div>
-        <div class="menu__list">
-          <i class="fas fa-book-open fa-2x"></i>
-          <span>웹툰</span>
-        </div>
-        <div class="menu__list">
-          <i class="fas fa-ellipsis-h fa-2x"></i>
-        </div>
-      </div>
+      <nav>
+        <ul>
+          <div class="menu">
+            <li class="menu__list">
+              <a href="/"><i class="fas fa-envelope-open-text fa-2x"></i></a>
+              <span>메일</span>
+            </li>
+            <li class="menu__list">
+              <a href="/"><i class="fas fa-coffee fa-2x"></i></a>
+              <span>카페</span>
+            </li>
+            <li class="menu__list">
+              <a href="/"><i class="fab fa-blogger fa-2x"></i></a>
+              <span>블로그</span>
+            </li>
+            <li class="menu__list">
+              <a href="/"><i class="fas fa-shopping-bag fa-2x"></i></a>
+              <span>쇼핑</span>
+            </li>
+            <li class="menu__list">
+              <a href="/"><i class="far fa-newspaper fa-2x"></i></a>
+              <span>뉴스</span>
+            </li>
+            <li class="menu__list">
+              <a href="/"><i class="fas fa-chart-line fa-2x"></i></a>
+              <span>증권</span>
+            </li>
+            <li class="menu__list">
+              <a href="/"><i class="fas fa-home fa-2x"></i></a>
+              <span>부동산</span>
+            </li>
+            <li class="menu__list">
+              <a href="/"><i class="fas fa-map-marker-alt fa-2x"></i></a>
+              <span>지도</span>
+            </li>
+            <li class="menu__list">
+              <a href="/"><i class="fas fa-book-open fa-2x"></i></a>
+              <span>웹툰</span>
+            </li>
+            <li class="menu__list">
+              <a href="/"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+              <span class="blind">더보기</span>
+            </li>
+          </div>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -119,88 +133,62 @@
           </ul>
           <div class="news-archive__head-topic">
             <span>분야별 뉴스<i class="fas fa-caret-down"></i></span>
-            <span>JTBC 중학생이 40대 여자 납치 후 도주... 수사 당국 착수 ...</span>
+            <span
+              >JTBC 중학생이 40대 여자 납치 후 도주... 수사 당국 착수 ...</span
+            >
             <span>뉴스홈</span>
           </div>
           <div class="news-archive__articles">
             <div class="global-component article-one">
               <div class="global-component__column">
-                <img
-                  class="credit-ad__thumbnail"
-                  src="#"
-                />
+                <img class="credit-ad__thumbnail" src="#" />
               </div>
               <div class="global-component__column">
-                <div class="global-component__title font-bold">
-                  CJB청주방송
-                </div>
+                <div class="global-component__title font-bold">CJB청주방송</div>
                 <div class="global-component__title font-bold">
                   "팔자걸음걸이에 두상 커"…40대 성범죄자 전자발찌 훼손하고 도...
                 </div>
-                <div class="global-component__text">
-                  10월 18일 15:05
-                </div>
+                <div class="global-component__text">10월 18일 15:05</div>
               </div>
             </div>
             <div class="global-component article-two">
               <div class="global-component__column">
-                <img
-                  class="credit-ad__thumbnail"
-                  src="#"
-                />
+                <img class="credit-ad__thumbnail" src="#" />
               </div>
               <div class="global-component__column">
-                <div class="global-component__title font-bold">
-                  중앙일보
-                </div>
+                <div class="global-component__title font-bold">중앙일보</div>
                 <div class="global-component__title font-bold">
                   갈라 디너 참석한 최태원, 동거인 김희영 손잡고 함께했다
                 </div>
-                <div class="global-component__text">
-                  10월 18일 15:03
-                </div>
+                <div class="global-component__text">10월 18일 15:03</div>
               </div>
             </div>
             <div class="global-component article-three">
               <div class="global-component__column">
-                <img
-                  class="credit-ad__thumbnail"
-                  src="#"
-                />
+                <img class="credit-ad__thumbnail" src="#" />
               </div>
               <div class="global-component__column">
-                <div class="global-component__title font-bold">
-                  조선일보
-                </div>
+                <div class="global-component__title font-bold">조선일보</div>
                 <div class="global-component__title font-bold">
                   3m 옆까지 접근해 영어로 “꺼져”... 美, 中전투기 위협비행 영...
                 </div>
-                <div class="global-component__text">
-                  10월 18일 15:00
-                </div>
+                <div class="global-component__text">10월 18일 15:00</div>
               </div>
             </div>
             <div class="global-component article-four">
               <div class="global-component__column">
-                <img
-                  class="credit-ad__thumbnail"
-                  src="#"
-                />
+                <img class="credit-ad__thumbnail" src="#" />
               </div>
               <div class="global-component__column">
-                <div class="global-component__title font-bold">
-                  한겨레
-                </div>
+                <div class="global-component__title font-bold">한겨레</div>
                 <div class="global-component__title font-bold">
                   가자지구 병원 폭발에 팔레스타인 항의시위…국제사회 분노...
                 </div>
-                <div class="global-component__text">
-                  10월 18일 14:56
-                </div>
+                <div class="global-component__text">10월 18일 14:56</div>
               </div>
             </div>
           </div>
-          
+
           <div class="news-archive__page-index">
             <i class="fas fa-chevron-left"></i>
             <span>언론사 더보기 19 / 21</span>
@@ -214,10 +202,7 @@
           </div>
           <div class="global-component side-ad__archive">
             <div class="global-component__column">
-              <img
-                class="credit-ad__thumbnail"
-                src="#"
-              />
+              <img class="credit-ad__thumbnail" src="#" />
             </div>
             <div class="global-component__column">
               <div class="global-component__title font-bold">
@@ -239,7 +224,10 @@
           </ul>
           <div class="shopping-archive__head-topic">
             <span class="font-bold">오늘의 혜택</span>
-            <span>coupang 세일 페스타 UP TO 50%, 브랜드 언더웨어 SALE UP TO 66%</span>
+            <span
+              >coupang 세일 페스타 UP TO 50%, 브랜드 언더웨어 SALE UP TO
+              66%</span
+            >
             <span>1/13</span>
           </div>
           <!-- shopping-article 설계하기 -->
@@ -256,7 +244,6 @@
               </div>
             </div>
           </div>
-          
         </div>
         <div class="main-container weather">
           <div class="weather-header">
@@ -293,13 +280,13 @@
         <div class="main-container box-nine">9</div>
         <div class="main-container box-ten">10</div>
         <div class="main-container box-empty">empty</div>
-      </div`>
+      </div>
     </main>
 
     <footer>
       <div id="footer">
         <section class="credit-ad">
-          <div class="global-component">
+          <article class="global-component">
             <div class="global-component__column">
               <img
                 class="credit-ad__thumbnail"
@@ -315,8 +302,8 @@
                 신선하고, 불확실한 재즈를 그리는 피아니스트, 최민석
               </div>
             </div>
-          </div>
-          <div class="global-component">
+          </article>
+          <article class="global-component">
             <div class="global-component__column">
               <img
                 class="credit-ad__thumbnail"
@@ -334,8 +321,8 @@
                 안전하고 편안한 추석을 위한 하지만 다른건 누르지 마세요
               </div>
             </div>
-          </div>
-          <div class="global-component">
+          </article>
+          <article class="global-component">
             <div class="global-component__column">
               <img
                 class="credit-ad__thumbnail"
@@ -353,11 +340,11 @@
                 할인+무배+증정 혜택으로 제로웨이스트 함께 시작해요!
               </div>
             </div>
-          </div>
+          </article>
         </section>
 
         <!-- display flex 속성 다시 확인해보기 -->
-        <section class="credit-header">
+        <div class="credit-header">
           <div class="credit-header__column">
             <span class="font-bold">공지사항</span>
           </div>
@@ -365,9 +352,8 @@
             <span class="font-bold">서비스 전체보기</span>
             <i class="fas fa-angle-right"></i>
           </div>
-        </section>
+        </div>
 
-        <!-- font-bold 를 modifier 기재 형식으로 변경하기 -->
         <section class="credit-main">
           <section class="credit-main__content">
             <div class="credit-main__row">
@@ -401,7 +387,7 @@
           </section>
 
           <section class="credit-main__content">
-            <div class="global-component">
+            <article class="global-component">
               <div class="global-component__column">
                 <div class="font-bold">웨일 브라우저</div>
                 <div>이용안내</div>
@@ -423,7 +409,7 @@
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABkCAMAAAA47XeXAAAAgVBMVEUAAADN5PdGm99Gm99Gm99Gm99Gm95Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gmt9Gm99Gm99Gm99Gm95Gm99Gm99Gm95Gm99Hm99Gm99Gm9/////3+/5cp+LO5PfR5/fO5fdcp+P7/f/zv5GhAAAAInRSTlMA/v7vH9u5qJNgGwb6l8a9uqF9WFUyLxYMCtbVmLCwe4OCj8gzEgAAA0NJREFUaN7NmmFz4iAQhkkwMTHGWrWtWvWuq8mF+/8/8Ey2nb0OhSwQZnw+MHQ7pbjAy2s2gsuiLPJMLpcyy4tyISZltnmHbxw3MzEVr/MUNNL5q5iCt2ccXCN9fhPB7CQYkTsRRlWDlboSAexzGCHfC28OKxhldfDOzBMwePLNTw0sauHFFphshQcLCUwkaQRfXYBPSkrEUBdv3jezcXXhw1ciUhc+fCUidQlH7qzqEk5d2dQlnHxvU5dwVgdXdSGclaiGyamt6hLO1qIu4ZASzcFE092SBprk1jagulvXAAw/qb5N7m176xQYmOPoLymYaK/X65/PNhlagE6LGUhfRM8FjNzuf/73//bHmInzoJEpjMyeWpp9RzGz/PT6+QvMNO2Q+67PPeYZY5h7jDVg5OM+/BGikd13JfDAj/Ad1WLMyEyUwKPT00ypN1GKAljQJtFiFgqRe86eYhbWIvPPPR5d+9pKiIgUwKNJdHXBvW9jyRye1EWLWYfnJcd141Byspizz7gbUyWDuqiW0v15D9g3ZgF86JwyKUgUHJaATUmS5rsEdkkTZLjZS8Alw+skFr8Nl6H6uosShaKOp3Zo+/jgFTDe+wcSfv0yFGfQaLX7tDO0reXOPRuMCG4Q11Y3IiYblWgzS7R+h31qdRtlGB7zikeUckz+AB3a8FuMqD7Cd2nhUHLOEIkLubQIkEuLxIdwEwUy3HyXxsbgPMJcGuGox+TSIugxuTQ+KHIaAS5N92eIIuMT5tJoPfHy5q9yKoXLelLuKRri0mjMQdhwTPw6Sv8pzKXhFyhNilEwkSCXRrnAnaPnJdyl0UrqXircpeHVglnv+62K4NJo3lFcGmWd79KO7OQoXAE8XNO6tIQGxj7fpfHTwk8RubQLWEGvgTNGKzj01fixunCMCCYcvSSlaFwUyKVx86J3bczpUR3zimq1LqdosAUbJF54ar+uk5Gju436mPTk8ZAXFdO93HRYTesUVgf3B+y0XdxLfdVputmfKp/iBtNjyl3c0kzUwtJIWewIPvAL9LOyWLsV9WAps3VRzh6hJBm3oOqsRKfHLGYzS/GP+iLBuBKdqkd+iWPkFZTHf4Em4us/uhI5qss/6zK5u8+AXpwAAAAASUVORK5CYII="
                 />
               </div>
-            </div>
+            </article>
           </section>
         </section>
 
