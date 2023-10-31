@@ -76,3 +76,10 @@
 .gnb-bottom__more::after {
   background-position: -250px -135px;
 }
+
+/* sprite */
+.credit-header__angle-right::after {
+  width: 8px;
+  height: 12px;
+  background-position: -426px 0px;
+}

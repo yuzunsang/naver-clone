@@ -49,3 +49,11 @@ a::after {
   border: 1px solid #000;
   opacity: 0.1;
 }
+
+.font-bold {
+  font-weight: bold;
+}
+
+.vertical-line {
+  opacity: 0.2;
+}

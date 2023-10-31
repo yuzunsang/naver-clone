@@ -2,20 +2,23 @@
   display: flex;
   font-size: 13px;
 }
-
-.global-component__column {
+.global-component__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin: 0 20px;
 }
-.global-component__title--highlight {
+.global-component__item {
+  margin: 10px 0;
+}
+.global-component__item--graywhite {
   background-color: #9fadb2;
   color: white;
   width: fit-content;
   height: fit-content;
-  padding: 3px;
+  padding: 3px 5px;
   border-radius: 3px;
 }
-.global-component__text {
+.global-component__item--light-op {
   opacity: 0.8;
 }
