@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="SHORTCUT ICON"
-      href="https://play-lh.googleusercontent.com/jYtnK__ibJh9emODIgTyjZdbKym1iAj4RfoVhQZcfbG-DuTSHR5moHVx9CQnqg1yoco9"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.naver.com/favicon.ico?1"
     />
     <link
       rel="stylesheet"
@@ -18,87 +19,133 @@
   </head>
   <body>
     <header>
-      <div class="shortcut">
-        <div class="shortcut__column">
-          <a href="/"><i class="fas fa-bars fa-2x" title="바로가기"></i></a>
-          <a href="/"
-            ><i class="fas fa-receipt fa-2x" title="네이버페이"></i
-          ></a>
-        </div>
-        <div class="shortcut__column">
-          <a href="/"
-            ><i class="far fa-comment-dots fa-2x" title="네이버톡"></i
-          ></a>
-          <a href="/"><i class="far fa-bell fa-2x" title="알림/혜택"></i></a>
-        </div>
+      <nav class="gnb-top">
+        <ul class="gnb-top__lists">
+          <div class="gnb-top__column">
+            <li>
+              <a href="/" class="gnb-top__three-bars"></a>
+            </li>
+            <li>
+              <a href="/" class="gnb-top__pay"></a>
+            </li>
+          </div>
+          <div class="gnb-top__column">
+            <li>
+              <a href="/" class="gnb-top__talk"></a>
+            </li>
+            <li>
+              <a href="/" class="gnb-top__events"></a>
+            </li>
+          </div>
+        </ul>
         <div id="alarm">9</div>
-      </div>
+      </nav>
 
       <form class="search-box">
         <fieldset>
           <legend class="blind">검색</legend>
           <div class="search-box__container">
-            <img
-              class="search-box__logo"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Naver_logo_initial.svg/1200px-Naver_logo_initial.svg.png"
-            />
-            <input
-              class="search-box__input"
-              type="text"
-              placeholder="검색어를 입력해주세요."
-            />
-            <i class="fas fa-keyboard fa-lg search-box__keyboard"></i>
-            <i class="fas fa-sort-down fa-lg search-box__toggle"></i>
-            <span class="blind">검색</span>
-            <button type="submit" class="search-box__button">
-              <i class="fas fa-search fa-lg"></i>
-            </button>
+            <div class="search-box__item">
+              <span class="blind">네이버 로고</span>
+              <a href="/" class="search-box__logo"></a>
+              <input
+                class="search-box__input"
+                type="text"
+                maxlength="100"
+                placeholder="검색어를 입력해주세요."
+              />
+            </div>
+            <div class="search-box__item">
+              <span class="blind">입력 도구</span>
+              <a href="/" class="search-box__keyboard"></a>
+              <span class="blind">검색어 자동완성</span>
+              <a href="/" class="search-box__toggle"></a>
+              <span class="blind">검색하기</span>
+              <a href="/" class="search-box__search"></a>
+            </div>
           </div>
         </fieldset>
       </form>
 
-      <nav>
-        <ul>
-          <div class="menu">
-            <li class="menu__list">
-              <a href="/"><i class="fas fa-envelope-open-text fa-2x"></i></a>
-              <span>메일</span>
+      <nav class="gnb-bottom">
+        <ul class="gnb-bottom__lists">
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__mail"></a>
+              </div>
+              <h2>메일</h2>
             </li>
-            <li class="menu__list">
-              <a href="/"><i class="fas fa-coffee fa-2x"></i></a>
-              <span>카페</span>
+          </div>
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__cafe"></a>
+              </div>
+              <h2>카페</h2>
             </li>
-            <li class="menu__list">
-              <a href="/"><i class="fab fa-blogger fa-2x"></i></a>
-              <span>블로그</span>
+          </div>
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__blog"></a>
+              </div>
+              <h2>블로그</h2>
             </li>
-            <li class="menu__list">
-              <a href="/"><i class="fas fa-shopping-bag fa-2x"></i></a>
-              <span>쇼핑</span>
+          </div>
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__shopping"></a>
+              </div>
+              <h2>쇼핑</h2>
             </li>
-            <li class="menu__list">
-              <a href="/"><i class="far fa-newspaper fa-2x"></i></a>
-              <span>뉴스</span>
+          </div>
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__news"></a>
+              </div>
+              <h2>뉴스</h2>
             </li>
-            <li class="menu__list">
-              <a href="/"><i class="fas fa-chart-line fa-2x"></i></a>
-              <span>증권</span>
+          </div>
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__stock"></a>
+              </div>
+              <h2>증권</h2>
             </li>
-            <li class="menu__list">
-              <a href="/"><i class="fas fa-home fa-2x"></i></a>
-              <span>부동산</span>
+          </div>
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__blog"></a>
+              </div>
+              <h2>부동산</h2>
             </li>
-            <li class="menu__list">
-              <a href="/"><i class="fas fa-map-marker-alt fa-2x"></i></a>
-              <span>지도</span>
+          </div>
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__map"></a>
+              </div>
+              <h2>지도</h2>
             </li>
-            <li class="menu__list">
-              <a href="/"><i class="fas fa-book-open fa-2x"></i></a>
-              <span>웹툰</span>
+          </div>
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__toon"></a>
+              </div>
+              <h2>웹툰</h2>
             </li>
-            <li class="menu__list">
-              <a href="/"><i class="fas fa-ellipsis-h fa-2x"></i></a>
-              <span class="blind">더보기</span>
+          </div>
+          <div class="gnb-bottom__column">
+            <li class="gnb-bottom__list">
+              <div>
+                <a href="/" class="gnb-bottom__sp gnb-bottom__more"></a>
+              </div>
             </li>
           </div>
         </ul>

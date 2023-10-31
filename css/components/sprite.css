@@ -1,0 +1,78 @@
+/* header gnb-top */
+.gnb-top__three-bars::after {
+  width: 26px;
+  height: 26px;
+  background-position: -82px -329px;
+}
+.gnb-top__pay::after {
+  width: 32px;
+  height: 32px;
+  background-position: -295px -177px;
+}
+.gnb-top__talk::after {
+  width: 26px;
+  height: 26px;
+  background-position: -190px -329px;
+}
+.gnb-top__events:after {
+  width: 26px;
+  height: 26px;
+  background-position: -136px -329px;
+}
+/* header search-box */
+.search-box__logo::after {
+  width: 25px;
+  height: 25px;
+  background-position: -125px -355px;
+}
+.search-box__keyboard::after {
+  width: 24px;
+  height: 14px;
+  background-position: -226px -254px;
+}
+.search-box__toggle::after {
+  width: 10px;
+  height: 6px;
+  background-position: -133px -201px;
+}
+.search-box__search::after {
+  width: 25px;
+  height: 25px;
+  background-position: -295px -329px;
+}
+
+/* header gnb-bottom */
+.gnb-bottom__sp::after {
+  width: 44px;
+  height: 44px;
+}
+.gnb-bottom__mail::after {
+  background-position: -250px -90px;
+}
+.gnb-bottom__cafe::after {
+  background-position: -250px 0px;
+}
+.gnb-bottom__blog::after {
+  background-position: -201px -98px;
+}
+.gnb-bottom__shopping::after {
+  background-position: -90px -209px;
+}
+.gnb-bottom__news::after {
+  background-position: 0px -209px;
+}
+.gnb-bottom__stock::after {
+  background-position: -180px -209px;
+}
+.gnb-bottom__real::after {
+  background-position: -45px -209px;
+}
+.gnb-bottom__map::after {
+  background-position: -201px 0px;
+}
+.gnb-bottom__toon::after {
+  background-position: -225px -209px;
+}
+.gnb-bottom__more::after {
+  background-position: -250px -135px;
+}

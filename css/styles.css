@@ -12,12 +12,19 @@
 @import "components/alt-global.css";
 @import "components/global.css";
 @import "components/reuse.css";
+@import "components/sprite.css";
 
 * {
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
 }
 
+a::after {
+  content: "";
+  display: block;
+  background-image: url(../images/sp_main.png);
+  background-size: 434px 414px;
+}
 /* 콘텐츠는 숨기면서 스크린 리더는 정상적으로 웹을 읽을 수 있도록 blind 속성 적용 */
 .blind {
   position: absolute;
