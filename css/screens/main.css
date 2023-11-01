@@ -1,23 +1,165 @@
 main {
   background: #fdfdfe;
-  min-height: 100px;
 }
 #main {
   width: 1280px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(49, 30px);
-  gap: 15px 30px;
-  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-
-/* side 부분 빈 공간은 side-bar 적용 */
-.main-container {
+.group-container {
+  background-color: skyblue;
   border: var(--main-border);
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
+.group-left {
+  width: 830px;
+}
+.head-ad {
+  height: 134px;
+  background-image: url("https://ssl.pstatic.net/melona/libs/1469/1469832/ec8753ac2d96005fee99_20231018101036151.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.box-three {
+  height: 427px;
+}
+.box-five {
+  height: 562px;
+}
+.box-eight {
+  height: 860px;
+}
+
+.group-right {
+  width: 420px;
+}
+.user-info {
+  height: 165px;
+  padding: var(--box-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-info__title {
+  display: flex;
+  justify-content: center;
+}
+.user-info__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  background: var(--naver-main-color);
+  border: 1px solid var(--main-border);
+  border-radius: 10px;
+  color: white;
+}
+.user-info__login-link {
+  padding-right: 10px;
+}
+.user-info__nb {
+  font-size: 14px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+.user-info__nb-lists {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.user-info__nb-lists > li {
+  display: flex;
+  align-items: flex-end;
+}
+.user-info__nb-lists > li,
+.user-info__nb-lists > span {
+  margin-right: 14px;
+}
+
+.box-four {
+  height: 240px;
+}
+.box-six {
+  height: 237px;
+}
+.box-seven {
+  height: 234px;
+}
+.box-nine {
+  height: 810px;
+}
+.box-ten {
+  height: 85px;
+}
+/* #main {
+  width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(103, 20px);
+}
+.main-container {
+  background: skyblue;
+  border: var(--main-border);
+  border-radius: 10px;
+} */
+/* .box-one {
+  grid-column: 1 / 3;
+  grid-row: 1 / 8;
+
+  background-image: url("https://ssl.pstatic.net/melona/libs/1469/1469832/ec8753ac2d96005fee99_20231018101036151.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+}
+.box-two {
+  grid-column: 3 / 4;
+  grid-row: 1 / 9;
+}
+.box-three {
+  grid-column: 1 / 3;
+  grid-row: 8 / 32;
+}
+.box-four {
+  grid-column: 3 / 4;
+  grid-row: 9 / 19;
+}
+.box-five {
+  grid-column: 1 / 3;
+  grid-row: 32 / 60;
+}
+.box-six {
+  grid-column: 3 / 4;
+  grid-row: 19 / 31;
+}
+.box-seven {
+  grid-column: 3 / 4;
+  grid-row: 31 / 43;
+}
+.box-eight {
+  grid-column: 1 / 3;
+  grid-row: 60 / 103;
+}
+.box-nine {
+  grid-column: 3 / 4;
+  grid-row: 43 / 85;
+}
+.box-ten {
+  grid-column: 3 / 4;
+  grid-row: 85 / 89;
+}
+.box-empty {
+  display: none;
+} */
+/* 
 .main-ad {
   grid-column: 1 / 3;
   grid-row: 1 / 4;
@@ -60,7 +202,6 @@ main {
   margin-right: 20px;
 }
 
-/* news-archive와 shopping-archive 구성이 비슷하므로 css를 묶어 관리한다. */
 .news-archive {
   grid-column: 1 / 3;
   grid-row: 4 / 15;
@@ -111,7 +252,7 @@ main {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
-/* div 안에 span 수직 수평 정렬하기의 방법! */
+
 .news-archive__page-index {
   display: flex;
   width: 40%;
@@ -245,6 +386,4 @@ main {
   grid-column: 3 / 4;
   grid-row: 43 / 45;
 }
-.box-empty {
-  display: none;
-}
+ */
