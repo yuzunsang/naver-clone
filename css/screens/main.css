@@ -6,6 +6,7 @@ main {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
 .group-container {
   background-color: skyblue;
@@ -24,9 +25,47 @@ main {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.box-three {
+.news-stand {
   height: 427px;
 }
+.news-stand__contents {
+  padding: var(--box-padding);
+  display: flex;
+  flex-direction: column;
+}
+.news-stand__nb-top-lists {
+  font-size: 18px;
+  display: flex;
+}
+.news-stand__nb-top-lists * {
+  margin-right: 5px;
+}
+.news-stand__issue {
+  background-color: #f5f7f8;
+  width: 790px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--main-border);
+  border-radius: 5px;
+  padding: 0 20px;
+}
+.news-stand__nb-middle {
+  display: flex;
+}
+.news-stand__nb-middle * {
+  margin-right: 5px;
+}
+.news-stand__down-toggle::after {
+  width: 9px;
+  height: 6px;
+  background-position: -154px -201px;
+}
+.news-stand__index {
+  position: relative;
+}
+
 .box-five {
   height: 562px;
 }
@@ -84,6 +123,10 @@ main {
 
 .box-four {
   height: 240px;
+  background-image: url("https://ssl.pstatic.net/melona/libs/1472/1472088/52712944a95db145041e_20230620140922766.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 .box-six {
   height: 237px;
