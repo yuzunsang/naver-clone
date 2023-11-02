@@ -55,6 +55,7 @@ a::after {
 }
 
 .vertical-line,
-.slash {
+.slash,
+.middle-dot {
   opacity: 0.2;
 }

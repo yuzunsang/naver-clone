@@ -111,6 +111,19 @@
   background-position: -389px -147px;
 }
 
+/* shopping */
+.shopping__left-angle::after {
+  transform: scaleX(-1);
+  width: 10px;
+  height: 12px;
+  background-position: -165px -402px;
+}
+.shopping__right-angle::after {
+  width: 10px;
+  height: 12px;
+  background-position: -165px -402px;
+}
+
 /* weather */
 .weather__header--temp-icon::after {
   width: 12px;

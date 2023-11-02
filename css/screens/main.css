@@ -38,10 +38,10 @@ main {
   display: flex;
 }
 .news-stand__nb-top-lists * {
-  margin-right: 5px;
+  margin-right: 12px;
 }
 .news-stand__issue {
-  background-color: #f5f7f8;
+  background-color: var(--container-color);
   width: 790px;
   height: 50px;
   display: flex;
@@ -117,9 +117,84 @@ main {
   top: 22px;
   right: 24px;
 }
-.box-five {
+.shopping {
   height: 562px;
+  padding: var(--box-padding);
 }
+.shopping__contents {
+  display: flex;
+  flex-direction: column;
+}
+.shopping__nb-top-lists {
+  display: flex;
+  font-size: 18px;
+}
+.shopping__nb-top-lists * {
+  margin-right: 12px;
+}
+.shopping__issue {
+  display: flex;
+  justify-content: space-between;
+}
+.shopping__issue-left {
+  width: 667px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--container-color);
+  border: var(--main-border);
+  border-radius: 5px;
+  padding: 0 20px;
+}
+.shopping__nb-middle {
+  display: flex;
+}
+.shopping__nb-middle * {
+  margin-right: 6px;
+}
+.shopping__nb-middle > img {
+  height: 13px;
+}
+.shopping__issue-right {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.shopping__issue-right--angle {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--main-border);
+  border-radius: 3px;
+}
+.shopping__archive {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.shopping__archive--items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.shopping__archive-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shopping__mall {
+  width: 245px;
+  height: 88px;
+  background-color: var(--container-color);
+  border: var(--main-border);
+  border-radius: 3px;
+}
+
 .box-eight {
   height: 860px;
 }
@@ -391,7 +466,7 @@ main {
 }
 .news-archive__head-topic,
 .shopping-archive__head-topic {
-  background-color: #f5f7f8;
+  background-color: var(--container-color);
   padding: 20px;
   border-radius: 10px;
 

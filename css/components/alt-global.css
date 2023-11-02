@@ -1,3 +1,5 @@
 .alt-global-component {
-  font-size: 13px;
+  width: 100px;
+  height: 170px;
+  background-color: tomato;
 }
