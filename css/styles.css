@@ -19,11 +19,20 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+/* after - sp_main sprite로부터 가져오기  */
 a::after {
   content: "";
   display: block;
   background-image: url(../images/sp_main.png);
   background-size: 434px 414px;
+}
+
+/* before - sp_sub sprite로부터 가져오기 */
+a::before {
+  content: "";
+  display: block;
+  background-image: url(../images/sp_sub.png);
+  background-size: 134px 121px;
 }
 /* 콘텐츠는 숨기면서 스크린 리더는 정상적으로 웹을 읽을 수 있도록 blind 속성 적용 */
 .blind {

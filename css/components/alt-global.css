@@ -1,5 +1,13 @@
 .alt-global-component {
   width: 100px;
   height: 170px;
-  background-color: tomato;
+}
+.alt-global-component__thumbnail {
+  border: var(--main-border);
+  border-radius: 5px;
+}
+.alt-global-component__title {
+  font-size: 12px;
+  line-height: 19px;
+  opacity: 0.8;
 }

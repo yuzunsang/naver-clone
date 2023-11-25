@@ -123,6 +123,26 @@
   height: 12px;
   background-position: -165px -402px;
 }
+.home-icon::before {
+  width: 32px;
+  height: 32px;
+  background-position: -34px 0;
+}
+.review-icon::before {
+  width: 32px;
+  height: 32px;
+  background-position: -68px -34px;
+}
+.order-icon::before {
+  width: 32px;
+  height: 32px;
+  background-position: -34px -34px;
+}
+.mybag-icon::before {
+  width: 17px;
+  height: 16px;
+  background-position: -102px -18px;
+}
 
 /* weather */
 .weather__header--temp-icon::after {
