@@ -119,11 +119,11 @@ main {
 }
 .shopping {
   height: 562px;
-  padding: var(--box-padding);
 }
 .shopping__contents {
   display: flex;
   flex-direction: column;
+  padding: var(--box-padding);
 }
 .shopping__nb-top-lists {
   display: flex;
@@ -227,6 +227,9 @@ main {
   justify-content: center;
   align-items: center;
 }
+.shopping__order h3 {
+  font-size: 14px;
+}
 .shopping__order-icon {
   border-radius: 50%;
   border: var(--main-border);
@@ -236,6 +239,65 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
+}
+
+.shopping__ad--thumbnail {
+  height: 145px;
+  width: 250px;
+  border: var(--main-border);
+  border-radius: 5px;
+}
+.shopping__ad--title {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.shopping__index {
+  position: relative;
+  border-top: var(--main-border);
+}
+.shopping__move {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: var(--main-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.move-prev {
+  position: absolute;
+  top: 12px;
+  left: 300px;
+}
+.move-next {
+  position: absolute;
+  top: 12px;
+  right: 300px;
+}
+.shopping__index--text {
+  position: absolute;
+  font-size: 15px;
+  top: 22px;
+  left: 342px;
+}
+.shopping__index--text > span:first-child {
+  color: purple;
+}
+.shopping__ad--btn {
+  position: absolute;
+  top: 22px;
+  right: 30px;
+}
+.shopping__btn-rect {
+  border: var(--main-border);
+  width: 32px;
+  height: 20px;
+  border-radius: 4px;
+}
+.shopping__btn-rect span {
+  opacity: 0.7;
+  padding-left: 5px;
 }
 
 .box-eight {
