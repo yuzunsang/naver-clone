@@ -300,8 +300,25 @@ main {
   padding-left: 5px;
 }
 
-.box-eight {
+.toon {
   height: 860px;
+}
+.toon__contents {
+  display: flex;
+  flex-direction: column;
+  padding: var(--box-padding);
+}
+.toon__contents {
+  display: flex;
+  flex-direction: column;
+  padding: var(--box-padding);
+}
+.toon__nb-top-lists {
+  display: flex;
+  font-size: 18px;
+}
+.toon__nb-top-lists * {
+  margin-right: 12px;
 }
 
 .group-right {
