@@ -304,21 +304,48 @@ main {
   height: 860px;
 }
 .toon__contents {
+  padding: var(--box-padding);
   display: flex;
   flex-direction: column;
-  padding: var(--box-padding);
-}
-.toon__contents {
-  display: flex;
-  flex-direction: column;
-  padding: var(--box-padding);
 }
 .toon__nb-top-lists {
-  display: flex;
   font-size: 18px;
+  display: flex;
 }
 .toon__nb-top-lists * {
   margin-right: 12px;
+}
+.toon__issue {
+  background-color: var(--container-color);
+  width: 790px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--main-border);
+  border-radius: 5px;
+  padding: 0 20px;
+}
+.toon__nb-middle {
+  display: flex;
+  align-items: center;
+}
+.toon__nb-middle * {
+  margin-right: 5px;
+}
+
+.toon__index {
+  position: relative;
+  border-top: var(--main-border);
+}
+.toon__index--text {
+  position: absolute;
+  font-size: 15px;
+  top: 22px;
+  left: 342px;
+}
+.toon__index--text > span:last-child {
+  color: var(--naver-main-color);
 }
 
 .group-right {
