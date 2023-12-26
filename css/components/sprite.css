@@ -150,6 +150,16 @@
   height: 12px;
   background-position: -165px -402px;
 }
+.toon__new-icon::after {
+  width: 24px;
+  height: 24px;
+  background-position: -363px 0px;
+}
+.toon__age-limit-icon::after {
+  width: 20px;
+  height: 23px;
+  background-position: -181px -128px;
+}
 
 /* weather */
 .weather__header--temp-icon::after {
