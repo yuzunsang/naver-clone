@@ -2,6 +2,10 @@
   width: 100px;
   height: 170px;
 }
+.alt-global-component--only-toon {
+  width: 110px;
+  height: 190px;
+}
 .alt-global-component__thumbnail {
   border: var(--main-border);
   border-radius: 5px;

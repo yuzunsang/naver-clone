@@ -144,6 +144,13 @@
   background-position: -102px -18px;
 }
 
+/* toon */
+.toon__right-angle::after {
+  width: 10px;
+  height: 12px;
+  background-position: -165px -402px;
+}
+
 /* weather */
 .weather__header--temp-icon::after {
   width: 12px;
