@@ -9,7 +9,6 @@ main {
   padding-bottom: 40px;
 }
 .group-container {
-  background-color: skyblue;
   border: var(--main-border);
   border-radius: 10px;
   margin-bottom: 15px;
@@ -605,9 +604,157 @@ main {
   border-top: var(--main-border);
 }
 
-.box-nine {
+.widget {
   height: 810px;
+  padding: var(--box-padding);
 }
+.widget__archive {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 192px 192px 280px;
+  grid-template-areas:
+    "calendar memo"
+    "papago dictionary"
+    "clips clips";
+  margin-top: 20px;
+  gap: 10px;
+}
+.widget__area {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.widget__calendar {
+  grid-area: calendar;
+  padding: var(--box-padding);
+
+  position: relative;
+}
+.widget__calendar--title {
+  margin-bottom: 20px;
+}
+.widget__calendar--date {
+  margin-bottom: 20px;
+}
+.widget__calendar--date span:first-child {
+  font-size: 2.5rem;
+}
+.widget__calendar--login {
+  position: absolute;
+  bottom: 20px;
+  text-decoration-line: underline;
+}
+.widget__memo {
+  grid-area: memo;
+
+  position: relative;
+}
+.widget__memo--title {
+  margin-bottom: 20px;
+  background-color: var(--naver-main-color);
+  color: white;
+  height: 46px;
+  padding: 15px;
+}
+.widget__memo--login {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-decoration-line: underline;
+}
+.widget__papago {
+  grid-area: papago;
+  padding: var(--box-padding);
+
+  position: relative;
+}
+.widget__papago-bird--icon {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+.widget__papago--translate {
+  width: 125px;
+  height: 40px;
+  background-color: rgb(1, 162, 255);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 10px;
+  left: 28px;
+}
+.widget__dictionary {
+  grid-area: dictionary;
+  padding: var(--box-padding);
+
+  position: relative;
+}
+.widget__dictionary--sentense {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.widget__dictionary-search {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.widget__clips {
+  grid-area: clips;
+  padding: var(--box-padding);
+
+  position: relative;
+}
+.widget__clips--title {
+  display: flex;
+  align-items: center;
+}
+.widget__clips--title h2 {
+  margin-left: 5px;
+}
+.widget__clip-archive {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 205px;
+  column-gap: 6px;
+  margin-top: 20px;
+}
+.widget__clip--image {
+  width: 108px;
+  height: 162px;
+}
+.widget__mobile-tab {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.widget__mobile-tab div:first-child {
+  display: flex;
+  align-items: center;
+}
+.widget__mobile-tab div:last-child {
+  display: flex;
+  align-items: center;
+}
+.widget__mobile-tab div * {
+  margin-right: 7px;
+}
+
 .browser-ad {
   height: 85px;
   padding: var(--box-padding);
